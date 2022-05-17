@@ -9,9 +9,15 @@ import Bookssearch from './component/Bookssearch';
 function App() {
   return (
     <div>
+   <BrowserRouter>
+   <Routes>
+<Route path='/' exact element={<Addbooks/>}/>
+<Route path='/search' exact element={<Bookssearch/>}/>
+
+   </Routes>
    
-<Addbooks/>
-<Bookssearch/>
+   </BrowserRouter>
+
 
     </div>
   );
